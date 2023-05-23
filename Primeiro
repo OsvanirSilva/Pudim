@@ -1,0 +1,41 @@
+//Faça um algoritmo que calcule a média final de uma disciplina que possui duas notas.
+#include <iostream>
+#include <iomanip> // BIBLIOTECA NECESSÁRIA PARA UTILIZAR FIXED E SETPRECISION
+
+using namespace std;
+
+int main() {
+  float nota1, nota2, media;
+
+  cout <<"*** CÁLCULO PARA A MÉDIA DAS NOTAS ***\n\n";
+  cout <<"Informe a primeira nota: ";
+  cin  >> nota1;
+  cout <<"Informe a segunda nota: ";
+  cin >> nota2;
+
+  media=(nota1+nota2)/2;
+
+  cout <<std::fixed<<std::setprecision(3)<<"\nA média final das notas é " << media << "."; // UTILIZEI  FIXED E SETPRECISION PARA MANTER DUAS CASAS APÓS A VÍRGULA 
+
+  return 0;
+}
+/*  EU  ESCREVI  EM  C E EM C++ PARA TREINAR
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+  float n1, n2, media;
+
+  printf("\nInforme a primeira nota: ");
+  scanf("%f", &n1);
+  printf("Informe a segunda nota: ");
+  scanf("%f", &n2);
+
+  media=(n1+n2)/2;
+
+  printf("A média das notas é %.2f", media); // UTILIEI .2 PARA MANTER DUAS CASAS APÓS A VÍRGULA
+  
+  return 0;
+} */
